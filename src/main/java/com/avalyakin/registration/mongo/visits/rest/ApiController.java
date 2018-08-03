@@ -1,7 +1,7 @@
-package com.avalyakin.registration.visits.rest;
+package com.avalyakin.registration.mongo.visits.rest;
 
-import com.avalyakin.registration.visits.Visit;
-import com.avalyakin.registration.visits.VisitsRepository;
+import com.avalyakin.registration.mongo.visits.Visit;
+import com.avalyakin.registration.mongo.visits.VisitsRepository;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;

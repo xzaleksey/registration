@@ -1,6 +1,6 @@
 package com.avalyakin.registration.index;
 
-import com.avalyakin.registration.visits.VisitsRepository;
+import com.avalyakin.registration.mongo.visits.VisitsRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
