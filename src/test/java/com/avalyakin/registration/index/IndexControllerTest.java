@@ -1,6 +1,6 @@
 package com.avalyakin.registration.index;
 
-import com.avalyakin.registration.mongo.visits.VisitsRepository;
+import com.avalyakin.registration.mongo.visitors.VisitorRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,11 +25,11 @@ public class IndexControllerTest {
     @Autowired
     private MockMvc mockMvc;
     @Autowired
-    private VisitsRepository visitsRepository;
+    private VisitorRepository visitorRepository;
 
     @Before
     public void setUp() {
-        visitsRepository.deleteAll();
+        visitorRepository.deleteAll();
     }
 
     @Test
@@ -42,7 +42,7 @@ public class IndexControllerTest {
     @Test
     public void apiControllerShouldReturnVisits() throws Exception {
         mockMvc.perform(get("/"));
-        mockMvc.perform(get("/api/visits"))
+        mockMvc.perform(get("/api/visitors"))
                 .andExpect(jsonPath("$.*.description", iterableWithSize(1)));
     }
 }
